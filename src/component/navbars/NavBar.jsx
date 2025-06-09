@@ -2,6 +2,9 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
+import profile from "../../assets/profile picture.png";
+import { IoIosArrowDown } from "react-icons/io";
+
 const NavBar = () => {
   return (
     <>
@@ -12,9 +15,9 @@ const NavBar = () => {
               <div className="logo">
                 <h1>Mr Chef's</h1>
               </div>
-              <div className="bars">
-                <FaBars />
-              </div>
+              {/* <div className="bars">
+                <button><FaBars /></button>
+              </div> */}
             </div>
             <div className="right-part">
               <div className="nav-btn">
@@ -25,16 +28,16 @@ const NavBar = () => {
                   <IoMdNotifications />
                 </button>
               </div>
-              <p>|</p>
+              <hr />
               <div className="profile">
-                <form>
-                  <select id="profile">
-                    <option value="employ">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </form>
+                <div className="pic">
+                    <img src={profile} alt="" />
+                </div>
+                <div className="name">
+                    <p className="main-name">Jack leo</p>
+                    <p>Waiter</p>
+                </div>
+               <button> <IoIosArrowDown/></button>
               </div>
             </div>
           </div>

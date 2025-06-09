@@ -1,2 +1,9 @@
 @import "./common.scss";
 @import "./variable.scss";
+
+// side-nav and nav
+@import "./navbars/navbar.scss"; 
+@import "./navbars/sidenav.scss"; 
+
+// pages 
+@import "./Menu.scss";

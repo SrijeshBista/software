@@ -1,0 +1,86 @@
+header{
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    .nav-main{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        .left-part{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 50px;
+
+            .bars{
+                button{
+                    border: none;
+                    cursor: pointer;
+                    background: transparent;
+                    color: #fff;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+        .right-part{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            width: 20%;
+            hr{
+                height: 30px;
+            }
+            .nav-btn{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                button{
+                    background-color: transparent;
+                    color: #fff;
+                    cursor: pointer;
+                    border: none;
+                    font-size: 30px;
+                    
+                }
+
+            }
+            .profile{
+               
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                padding: 5px;
+                .pic{
+                    width: 30%;
+                    img{
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .name{
+                    .main-name{
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

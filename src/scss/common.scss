@@ -1,0 +1,9 @@
+@import "./variable.scss";
+.container{
+    width:95%;
+    margin: auto;
+}
+body{
+    background-color:$font-color;
+    color: #fff;
+}

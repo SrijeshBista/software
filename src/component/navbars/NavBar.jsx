@@ -2,7 +2,7 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
-import profile from "../../assets/profilepicture.png";
+// import profile from "../../assets/profilepicture.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 const NavBar = () => {

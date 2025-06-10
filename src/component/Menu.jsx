@@ -4,7 +4,9 @@ import SideNav from "./navbars/SideNav";
 import { FaSearch } from "react-icons/fa";
 import { LuSlidersHorizontal } from "react-icons/lu";
 import { CiBowlNoodles } from "react-icons/ci";
-const Menu = () => {
+import MenuCard from "./MenuCard";
+import pasta from "../assets/spaghetti.png";
+const Menu = (props) => {
   return (
     <>
       <section id="menu">
@@ -26,44 +28,67 @@ const Menu = () => {
                 </div>
               </div>
               <div className="menu-middle">
-                <div className="small-card">
-                    <div className="icons"><CiBowlNoodles /></div>
-                    <div className="detail">
-                        <p>All</p>
-                        <span>253 items</span>
+                <div className="card">
+                  <div className="small-card">
+                    <div className="icons">
+                      <CiBowlNoodles />
                     </div>
-                </div>
-                <div className="small-card">
-                    <div className="icons"><CiBowlNoodles /></div>
                     <div className="detail">
-                        <p>All</p>
-                        <span>253 items</span>
+                      <p>All</p>
+                      <span>253 items</span>
                     </div>
-                </div>
-                <div className="small-card">
-                    <div className="icons"><CiBowlNoodles /></div>
+                  </div>
+                  <div className="small-card">
+                    <div className="icons">
+                      <CiBowlNoodles />
+                    </div>
                     <div className="detail">
-                        <p>All</p>
-                        <span>253 items</span>
+                      <p>All</p>
+                      <span>253 items</span>
                     </div>
-                </div>
-                <div className="small-card">
-                    <div className="icons"><CiBowlNoodles /></div>
+                  </div>
+                  <div className="small-card">
+                    <div className="icons">
+                      <CiBowlNoodles />
+                    </div>
                     <div className="detail">
-                        <p>All</p>
-                        <span>253 items</span>
+                      <p>All</p>
+                      <span>253 items</span>
                     </div>
-                </div>
-                <div className="small-card">
-                    <div className="icons"><CiBowlNoodles /></div>
+                  </div>
+                  <div className="small-card">
+                    <div className="icons">
+                      <CiBowlNoodles />
+                    </div>
                     <div className="detail">
-                        <p>All</p>
-                        <span>253 items</span>
+                      <p>All</p>
+                      <span>253 items</span>
                     </div>
+                  </div>
+                  <div className="small-card">
+                    <div className="icons">
+                      <CiBowlNoodles />
+                    </div>
+                    <div className="detail">
+                      <p>All</p>
+                      <span>253 items</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-               
+
+              <div className="menu-bottom">
+                <div className="cards">
+                  <MenuCard name="Spaghetti Carbonara" price="$25.62" img={pasta} des="This dish is a deli bacon-egg-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower." />
+                  <MenuCard name="Spaghetti Carbonara" price="$25.62" img={pasta} des="This dish is a deli bacon-egg-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower." />
+                  <MenuCard name="Spaghetti Carbonara" price="$25.62" img={pasta} des="This dish is a deli bacon-egg-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower." />
+                  <MenuCard name="Spaghetti Carbonara" price="$25.62" img={pasta} des="This dish is a deli bacon-egg-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower." />
+                  <MenuCard name="Spaghetti Carbonara" price="$25.62" img={pasta} des="This dish is a deli bacon-egg-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower." />
+                  <MenuCard name="Spaghetti Carbonara" price="$25.62" img={pasta} des="This dish is a deli bacon-egg-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower." />
+                </div>
+              </div>
             </div>
+
             {/* right side  */}
             <div className="menu-right"></div>
           </div>

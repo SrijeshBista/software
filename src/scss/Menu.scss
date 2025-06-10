@@ -2,14 +2,16 @@
   display: flex;
   // width: 100%;
   padding: 8% 0 0 15%;
+
   .menu-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    // gap: 5px;
     .menu-left {
-    //   width: 50%;
-        overflow-x: scroll;
-         scrollbar-width: 0;    
+      width: 70%;
+      overflow-x: hidden;
       padding: 5px 10px;
+      // border: 1px solid red;
       .menu-top {
         display: flex;
         align-items: center;
@@ -18,13 +20,11 @@
         gap: 20px;
         .search {
           width: 85%;
-          // border: 2px solid blue;
           background-color: $secondary-color;
           padding: 10px;
           border-radius: 10px;
           color: $font-color;
           form {
-            // width: 100%;
             input {
               width: 97%;
               border: none;
@@ -49,44 +49,141 @@
         }
       }
       .menu-middle {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0px;
-     
-       
+        scroll-behavior: smooth;
+        // border: 2px solid blue;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        margin: 15px 10px;
 
-       
-        .small-card {
+        .card {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border: 1px solid black;
-          background-color: $secondary-color;
-          padding: 10px 20px ;
-          .icons{
-            font-size: 30px;
-          }
-          .detail{
+          width: 980px;
+
+          .small-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // border: 1px solid black;
+            background-color: $secondary-color;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+              border-radius: 10px;
+              // transform: scale(1.2);
+              background-color: rgba(122, 122, 122, 0.903);
+              transition: 400ms ease-in-out;
+              color: #fff;
+            }
+
+            .icons {
+              font-size: 30px;
+            }
+            .detail {
               p {
                 margin: 0;
                 text-align: center;
                 font-size: 18px;
                 color: #fff;
               }
-              span{
+              span {
                 font-size: 18px;
               }
+            }
           }
-
+        }
+      }
+      .menu-bottom {
+        .cards{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+          flex-wrap: wrap;
         }
       }
     }
 
     .menu-right {
-      width: 35%;
+      width: 25%;
       background-color: $secondary-color;
       border-radius: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// menu prop scss
+.menucard-main{
+
+  .menu-card{
+    // border: 1px solid blue;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    width: 250px;
+    padding: 15px;
+    .img{
+      width: 100%;
+      img{
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    .middle-card{
+      .title{
+        h1{
+          margin:5px 0px;
+          color: #fff;
+        }
+      }
+      .des{
+        p{
+          padding-top: 5px;
+          padding: 0;
+          margin: 0;
+          font-size:14px ;
+        }
+      }
+    }
+    .bottom-card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      .price{
+        p{
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      button{
+        cursor: pointer;
+        margin: 0 10px;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        width: 38px;
+      }
+      .increase{
+        background-color: $active-color;
+      }
     }
   }
 }

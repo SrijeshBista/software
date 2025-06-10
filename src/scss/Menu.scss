@@ -66,6 +66,7 @@
             justify-content: space-between;
             align-items: center;
             // border: 1px solid black;
+            gap: 10px;
             background-color: $secondary-color;
             padding: 15px 25px;
             border-radius: 10px;
@@ -77,6 +78,11 @@
               transition: 400ms ease-in-out;
               color: #fff;
             }
+             &.active {
+                background-color: rgba(122, 122, 122, 0.903) ;
+                color: #fff;
+                
+              }
 
             .icons {
               font-size: 30px;
@@ -183,6 +189,22 @@
       }
       .increase{
         background-color: $active-color;
+      }
+    }
+    .send{
+      button{
+        border: 1px solid $secondary-color;
+        background-color: $active-color;
+        padding: 5px 10px;
+        border-radius:10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 17px;
+        &:hover{
+          transition: 500ms ease-in-out;
+          background-color: transparent;
+          border: 1px solid $active-color;
+        }
       }
     }
   }

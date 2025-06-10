@@ -38,6 +38,9 @@ const MenuCard = ({ name, img, price, des }) => {
               <button onClick={increaseCount} className="increase">+</button>
             </div>
           </div>
+            <div className="send">
+              <button>Place Order</button>
+            </div>
         </div>
       </div>
     </>

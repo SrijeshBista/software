@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
@@ -6,6 +6,16 @@ import profile from "../../assets/Profilepicture.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 const NavBar = () => {
+  const [popup, showepopup] = useState(false);
+  // function to open the profile
+
+  const openpopup = () => {
+    showepopup(true);
+  };
+  const closepopup = () => {
+    showepopup(false);
+  };
+
   return (
     <>
       <header>
@@ -29,16 +39,28 @@ const NavBar = () => {
                 </button>
               </div>
               <hr />
-              <div className="profile">
+              <div className="profile" onClick={openpopup}>
                 <div className="pic">
-                    <img src={profile} alt="" />
+                  <img src={profile} alt="" />
                 </div>
                 <div className="name">
-                    <p className="main-name">Jack leo</p>
-                    <p>Waiter</p>
+                  <p className="main-name">Jack leo</p>
+                  <p>Waiter</p>
                 </div>
-               <button> <IoIosArrowDown/></button>
+                <button>
+                  {" "}
+                  <IoIosArrowDown />
+                </button>
               </div>
+
+              {popup && (
+                <div className="popup">
+                  <div className="popup-content">
+                    <p>This is the profile popup</p>
+                    <button onClick={closepopup}>Close</button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
